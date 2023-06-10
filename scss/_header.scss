@@ -1,0 +1,48 @@
+nav{
+    padding:2rem ;
+    background: rgb(242,234,235);
+    background: linear-gradient(0deg, rgba(242,234,235,1) 0%, rgba(179,4,4,1) 0%, rgba(143,3,90,1) 100%);
+
+    ul{
+       list-style: none;
+       display: flex;
+       justify-content: center;
+
+       a{ 
+         text-decoration: none;
+         color: white;
+         padding: .4rem .8rem;
+         margin: 04rem;
+         border-radius: 15px;
+         font-family: 'Urbanist', sans-serif;
+        
+       }
+   }
+}
+
+.nav__link{
+  transition: .2s;
+}
+
+.nav__link:hover ,
+.nav__submenu li a:hover{
+  background-color: white;
+  color: rgb( 32, 32, 32);
+}
+
+.nav__submenu{
+  display: none;
+}
+
+
+.trigger:hover > .nav__submenu{
+       display: block;
+       position: absolute;
+       background-color: $color-bordo ;
+       border-radius: 15px;
+       box-shadow: 3px 6px 9px #888888;
+}
+
+.nav__submenu li{
+  margin: 1rem 0;
+}

@@ -1,0 +1,353 @@
+@charset "UTF-8";
+nav {
+  padding: 2rem;
+  background: rgb(242, 234, 235);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(242, 234, 235)), color-stop(0%, rgb(179, 4, 4)), to(rgb(143, 3, 90)));
+  background: linear-gradient(0deg, rgb(242, 234, 235) 0%, rgb(179, 4, 4) 0%, rgb(143, 3, 90) 100%);
+}
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+nav ul a {
+  text-decoration: none;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  margin: 4rem;
+  border-radius: 15px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.nav__link {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nav__link:hover,
+.nav__submenu li a:hover {
+  background-color: white;
+  color: rgb(32, 32, 32);
+}
+
+.nav__submenu {
+  display: none;
+}
+
+.trigger:hover > .nav__submenu {
+  display: block;
+  position: absolute;
+  background-color: #AA0000;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 6px 9px #888888;
+          box-shadow: 3px 6px 9px #888888;
+}
+
+.nav__submenu li {
+  margin: 1rem 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content min-content min-content;
+  grid-template-areas: "subtitulo subtitulo" "block-1 block-2" "subtitulo2 subtitulo2" "block-3 block-4";
+}
+
+.grid_block-subtitulo {
+  grid-area: subtitulo;
+  padding: 2rem;
+}
+
+.grid_block1 {
+  grid-area: block-1;
+}
+
+.grid_block2 {
+  grid-area: block-2;
+}
+
+.grid_block-subtitulo2 {
+  grid-area: subtitulo2;
+}
+
+.grid_block3 {
+  grid-area: block-3;
+}
+
+.grid_block4 {
+  grid-area: block-4;
+}
+
+.grid_blockflex {
+  padding: 5rem;
+}
+
+.grid_block-img {
+  width: 100%;
+}
+
+.grid_block-descripción {
+  font-family: "Urbanist", sans-serif;
+  color: #AA0000;
+  font-size: 1.5rem;
+}
+
+.grid_block-button {
+  background-color: #AA0000;
+  color: #faf9f9;
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+}
+
+.footer {
+  background-color: #AA0000;
+  padding: 2rem 2rem;
+  margin-top: 2rem;
+  display: block;
+  text-align: center;
+}
+.footer .footer_texto {
+  font-family: "Quattrocento", serif;
+  font-size: 2rem;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+.footer ul {
+  list-style: none;
+}
+.footer ul a {
+  font-family: "Urbanist", sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+.footer .footer_redes {
+  font-family: "Urbanist", sans-serif;
+  margin: auto;
+  width: 20rem;
+  text-align: center;
+  color: white;
+}
+.footer .footer_redes .footer_logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+.footer .footer_redes .footer_logos img {
+  width: 4rem;
+  height: 4rem;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: lightcoral;
+  }
+  .grid {
+    grid-template-areas: "subtitulo subtitulo" "block-1 block-2" "subtitulo2 subtitulo2" "block-3 block-4";
+  }
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav {
+    padding: 1rem;
+  }
+  .nav__link {
+    margin: 0.2rem;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  body {
+    background-color: aliceblue;
+  }
+  nav {
+    padding: 0.5rem;
+  }
+  .nav__link {
+    margin: 0.2rem;
+    font-size: 1rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content;
+    grid-template-areas: "subtitulo" "block-1" "block-2" "subtitulo2" "block-3" "block-4";
+    margin: 10%;
+  }
+  .footer_index {
+    text-align: center;
+    padding: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lightpink;
+  }
+  .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .footer_div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #AA0000;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Quattrocento", serif;
+}
+
+h2 {
+  color: #AA0000;
+  text-align: center;
+  font-family: "Urbanist", sans-serif;
+  margin: 1rem;
+}
+
+h3 {
+  color: #AA0000;
+  font-family: "Urbanist", sans-serif;
+  text-align: center;
+}
+
+.carusel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carrusel {
+  height: 30%;
+  width: 50%;
+}
+
+.conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  background-color: #AA0000;
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 5%;
+  margin: 1rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card .card_letra {
+  font-family: "Urbanist", sans-serif;
+  color: #faf9f9;
+}
+
+h5 {
+  color: #faf9f9;
+  font-size: 1.1rem;
+}
+
+.card div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card div a {
+  background-color: #faf9f9;
+  padding: 0.2rem;
+  margin: 0.4rem;
+  border-radius: 15%;
+}
+
+.preguntas {
+  font-family: "Urbanist", sans-serif;
+  margin: 4rem;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  color: #faf9f9;
+}
+.preguntas .titulo-preguntas {
+  background-color: #AA0000;
+  margin: 3rem;
+  color: #faf9f9;
+}
+
+.subtitulo {
+  margin: 2rem;
+  color: #AA0000;
+}
+
+.preguntas p {
+  color: #AA0000;
+}
+
+.preguntas-orden li {
+  color: #AA0000;
+}
+
+.mapa-ubicación {
+  width: 100%;
+  height: 300%;
+}
+
+.form-texto {
+  font-family: "Urbanist", sans-serif;
+  color: #AA0000;
+  text-align: left;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #AA0000;
+  height: auto;
+}

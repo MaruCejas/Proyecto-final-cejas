@@ -1,0 +1,49 @@
+.footer{
+    background-color: $color-bordo;
+    padding: 2rem 2rem;
+    margin-top: 2rem ;
+    display: block;
+    text-align: center;
+    
+
+    .footer_texto{
+        font-family: 'Quattrocento', serif;
+        font-size: 2rem;
+        margin: auto;
+        text-align: center;
+        color: white;
+    }
+
+
+       ul{
+          list-style: none;
+          
+          a{
+              font-family: 'Urbanist', sans-serif;
+              font-size: 1rem;  
+              color: white;
+              
+           }
+         }
+
+      .footer_redes{
+        font-family: 'Urbanist', sans-serif;
+        margin: auto;
+        width: 20rem;
+        text-align: center;
+        color: white;
+        .footer_logos{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            img{
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+    }
+
+}
+    
+
+

@@ -1,0 +1,58 @@
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content  min-content min-content min-content  ;
+    grid-template-areas: 
+      "subtitulo subtitulo"
+      "block-1 block-2"
+      "subtitulo2 subtitulo2"
+      "block-3 block-4";
+    
+}
+
+.grid_block-subtitulo{
+    grid-area: subtitulo;
+    padding: 2rem;
+}
+
+.grid_block1{
+    grid-area: block-1;
+}
+
+.grid_block2{
+    grid-area: block-2;
+}
+
+.grid_block-subtitulo2{
+    grid-area: subtitulo2;
+}
+
+.grid_block3{
+    grid-area: block-3;
+}
+
+.grid_block4{
+    grid-area: block-4;
+}
+
+.grid_blockflex{
+    padding: 5rem;
+}
+
+.grid_block-img{
+    width: 100%;
+}
+
+.grid_block-descripción{
+    font-family: 'Urbanist', sans-serif;
+    color: $color-bordo;
+    font-size: 1.5rem;
+}
+
+.grid_block-button{
+    background-color: $color-bordo;
+    color: $color2;
+    padding: .4rem .8rem;
+    
+    border-radius: 15px;
+}
